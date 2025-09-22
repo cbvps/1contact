@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Создание визитки</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #374151;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #9333ea, #2563eb);
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Создать визитку</h1>
+    <form method="post">
+      <label>ФИО</label>
+      <input type="text" name="name" required />
+
+      <label>Должность</label>
+      <input type="text" name="title" required />
+
+      <label>Компания</label>
+      <input type="text" name="company" required />
+
+      <label>Телефон</label>
+      <input type="text" name="phone" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Город</label>
+      <input type="text" name="city" required />
+
+      <label>Слоган</label>
+      <input type="text" name="slogan" />
+
+      <button type="submit">Создать визитку</button>
+    </form>
+  </div>
+</body>
+</html>
