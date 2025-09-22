@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Создание визитки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    input {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: linear-gradient(90deg, #6b46c1, #3182ce);
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Создать визитку</h1>
+    <form method="post">
+      <label>ФИО</label>
+      <input type="text" name="name" required placeholder="Иван Иванов">
+
+      <label>Должность</label>
+      <input type="text" name="title" required placeholder="Менеджер проектов">
+
+      <label>Компания</label>
+      <input type="text" name="company" placeholder="ООО Пример">
+
+      <label>Телефон</label>
+      <input type="tel" name="phone" required placeholder="+7 (999) 123-45-67">
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="email@example.com">
+
+      <label>Город</label>
+      <input type="text" name="city" placeholder="Москва">
+
+      <label>Слоган</label>
+      <input type="text" name="slogan" placeholder="Ваш девиз">
+
+      <label>Telegram</label>
+      <input type="url" name="telegram" placeholder="https://t.me/username">
+
+      <label>VK</label>
+      <input type="url" name="vk" placeholder="https://vk.com/username">
+
+      <label>Instagram</label>
+      <input type="url" name="instagram" placeholder="https://instagram.com/username">
+
+      <label>LinkedIn</label>
+      <input type="url" name="linkedin" placeholder="https://linkedin.com/in/username">
+
+      <button type="submit">Создать визитку</button>
+    </form>
+    <p class="note">После заполнения формы вы получите персональную визитку</p>
+  </div>
+</body>
+</html>
